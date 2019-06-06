@@ -29,7 +29,7 @@ RUN curl -sSL https://dl.google.com/linux/linux_signing_key.pub | apt-key add - 
 ENV CHROME_VERSION=74.0.3729.131-1
 
 RUN apt-get update && apt-get install -y \
-    google-chrome-stable=$CHROME_VERSION \
+    google-chrome-stable \
     --no-install-recommends
 
 # Get yarn sources
